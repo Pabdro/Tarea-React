@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .good-button,
+  .bad-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .good-button img,
+  .bad-button img {
+    width: 30px;
+    height: 30px;
+  }
+  .crossed {
+    text-decoration: line-through;
+  }
