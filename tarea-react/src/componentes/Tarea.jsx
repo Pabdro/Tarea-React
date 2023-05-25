@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Bien from '../assets/bien.png'
 import Mal from '../assets/mal.png'
 import './Tarea.css'
-const Tarea = () => {
+const Tarea = (tarea) => {
     const [isWordCrossed, setIsWordCrossed] = useState(false);
     const [isContainerVisible, setIsContainerVisible] = useState(true);
     const handleGoodButtonClick = () => {
@@ -18,7 +18,7 @@ const Tarea = () => {
     return (
         <div>
             <div className="container">
-            <h1 className={isWordCrossed ? 'crossed' : ''}>Palabra</h1>
+            <h1 className={isWordCrossed ? 'crossed' : ''}>{tarea.nombre}</h1>
             <div className="buttons">
                 <button className="good-button" onClick={handleGoodButtonClick}>
                 <img src={Bien} alt="Botón Bien" />
